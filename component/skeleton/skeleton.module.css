@@ -1,0 +1,45 @@
+.area{
+    position: relative;
+    padding : 10px;
+    background : #4e4e4e;
+    border-radius : 10px;
+    margin : 10px;
+}
+
+.title{
+    height : 50px;
+    background : #a2a2a2;
+    border-radius : 10px;
+    margin-bottom : 10px;
+}
+
+.content{
+    padding : 10px;
+    height : 100px;
+    background : #a2a2a2;
+    margin-top : 10px;
+    border-radius : 10px;
+}
+
+.bar{
+    position: absolute;
+    top : 0;
+    left : 0;
+    height : 100%;
+    width : 100%;
+    animation: slide 3s infinite ease-in-out;
+}
+
+.shimmer {
+    width : 50%;
+    height : 100%;
+    background: rgba(255,255,255,0.2);
+    transform : skewX( -200deg );
+    box-shadow: 0 0 30px 30px rgba(255,255,255,0.05);
+}
+
+@keyframes slide {
+    0% { transform: translateX(-150%); }
+    50% { transform: translateX(-60%); }
+    100% { transform: translateX(150%); }
+}
